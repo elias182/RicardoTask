@@ -1,0 +1,156 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nombre": "Juan Pérez",
+      "correo": "juan.perez@example.com",
+      "password": "1234",
+      "type_usuario": "emp",
+      "compania": null
+    },
+    {
+      "nombre": "Ana Gómezz",
+      "compania": {
+        "id": 1,
+        "nombre": "Tech Solutionsss"
+      },
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "nombre": "Carlos Ruiz",
+      "correo": "carlos.ruiz@example.com",
+      "password": "qwerty",
+      "type_usuario": "usur",
+      "compania": 2
+    },
+    {
+      "id": "4",
+      "nombre": "María López",
+      "correo": "maria.lopez@example.com",
+      "password": "pass123",
+      "type_usuario": "emp",
+      "compania": null
+    },
+    {
+      "id": "1a9e",
+      "correo": "teste@exemplo.us",
+      "password": "prueba112",
+      "nombre": "admin1",
+      "type_usuario": "usur",
+      "compania": 2
+    },
+    {
+      "id": "1e09",
+      "correo": "ejemplo@ejemplo.mx",
+      "password": "nueva1",
+      "nombre": "mexi",
+      "type_usuario": "emp",
+      "compania": "6b92"
+    },
+    {
+      "id": "0d02",
+      "nombre": "eliaso",
+      "compania": 1
+    },
+    {
+      "nombre": "Elias Mouimis",
+      "compania": {
+        "id": 1,
+        "nombre": "Tech Solutionsss"
+      },
+      "id": "2ab3"
+    },
+    {
+      "id": "6368",
+      "correo": "emp@gmail.com",
+      "password": "12345678",
+      "nombre": "Elias Mouimi",
+      "type_usuario": "emp",
+      "compania": "93fa"
+    },
+    {
+      "id": "3f37",
+      "correo": "usuario@ejemplo.com",
+      "password": "contraseña123",
+      "nombre": "Juan Pérez",
+      "type_usuario": "usur",
+      "compania": 1
+    },
+    {
+      "id": "fa1f",
+      "correo": "empresa@ejemplo.com",
+      "password": "contraseña123",
+      "nombre": "Carlos Gómez",
+      "type_usuario": "emp",
+      "compania": "c9b6"
+    },
+    {
+      "id": "0a5a",
+      "nombre": "elias",
+      "email": "eliasmouimi2016@gmail.com",
+      "password": "Hasbro123#",
+      "compania": "1"
+    },
+    {
+      "id": "77af",
+      "nombre": "elias",
+      "email": "eliasmouimi2016@gmail.com",
+      "password": "Hasbro123#",
+      "compania": "1"
+    },
+    {
+      "id": "714b",
+      "nombre": "elias",
+      "correo": "eliasmouimi2016@gmail.com",
+      "password": "Hasbro123#",
+      "compania": "1"
+    },
+    {
+      "id": "f7ab",
+      "nombre": "elias",
+      "correo": "eliasmouimi201@gmail.com",
+      "password": "Hasbro123#",
+      "compania": "38d2",
+      "type_usuario": "empresario"
+    },
+    {
+      "id": "b764",
+      "nombre": "elias",
+      "correo": "eliasmouii2016@gmail.com",
+      "password": "Hasbro123#",
+      "compania": "e50c",
+      "type_usuario": "empresario"
+    }
+  ],
+  "companias": [
+    {
+      "nombre": "Tech Solutionsss",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "nombre": "Innovative Systems",
+      "propietario": 4
+    },
+    {
+      "id": "93fa",
+      "nombre": "Doriro",
+      "propietario": 1
+    },
+    {
+      "nombre": "Compañía Editada",
+      "id": "4a99"
+    },
+    {
+      "id": "38d2",
+      "nombre": "EliasSL",
+      "propietario": "elias"
+    },
+    {
+      "id": "e50c",
+      "nombre": "Eliasvl2SL",
+      "propietario": "b764"
+    }
+  ]
+}
