@@ -54,7 +54,7 @@ const Login: React.FC = () => {
         {error && <div className="alert alert-danger">{error}</div>}
         <Form onSubmit={handleSubmit}>
           <Form.Group controlId="email" className="mb-3">
-            <Form.Label>Correo electrónico</Form.Label>
+            <Form.Label>email</Form.Label>
             <Form.Control
               type="email"
               placeholder="Ingrese su correo electrónico"
@@ -65,7 +65,7 @@ const Login: React.FC = () => {
           </Form.Group>
 
           <Form.Group controlId="password" className="mb-3">
-            <Form.Label>Contraseña</Form.Label>
+            <Form.Label>Password</Form.Label>
             <Form.Control
               type="password"
               placeholder="Ingrese su contraseña"
@@ -79,7 +79,7 @@ const Login: React.FC = () => {
         </Form>
         <div className="mt-3 text-center">
           <p>
-            ¿No tienes cuenta? <a href="/register">Regístrate aquí</a>
+            You dont have an acount yet? <a href="/register">Regístrate aquí</a>
           </p>
         </div>
       </div>

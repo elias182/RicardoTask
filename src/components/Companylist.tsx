@@ -73,7 +73,7 @@ const CompanyList: React.FC = () => {
   if (loading) {
     return (
       <div className="text-center mt-5">
-        <h3>Cargando compañías...</h3>
+        <h3>CLoading Companies...</h3>
       </div>
     );
   }
@@ -88,7 +88,7 @@ const CompanyList: React.FC = () => {
 
   return (
     <div className="container mt-5">
-      <h2 className="text-center mb-4">Lista de Compañías</h2>
+      <h2 className="text-center mb-4">List of Companies</h2>
       <div className="row">
         {companies.length > 0 ? (
           companies.map((company) => (
@@ -101,7 +101,7 @@ const CompanyList: React.FC = () => {
                     className="btn btn-info btn-sm"
                     onClick={() => handleCompanyClick(company.id)}
                   >
-                    Ver Detalles
+                    details
                   </button>
                   {isAdmin && (
                     <div>
@@ -109,13 +109,13 @@ const CompanyList: React.FC = () => {
                         className="btn btn-warning btn-sm mr-2"
                         onClick={() => handleEditCompany(company.id)}
                       >
-                        Editar
+                        Edit
                       </button>
                       <button
                         className="btn btn-danger btn-sm"
                         onClick={() => handleDeleteCompany(company.id)}
                       >
-                        Eliminar
+                        delete
                       </button>
                     </div>
                   )}
@@ -125,7 +125,7 @@ const CompanyList: React.FC = () => {
           ))
         ) : (
           <div className="col-12">
-            <p className="text-center">No se encontraron compañías.</p>
+            <p className="text-center">No Companys</p>
           </div>
         )}
       </div>

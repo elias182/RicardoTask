@@ -69,7 +69,7 @@ const EditCompany: React.FC = () => {
   };
 
   if (loading) {
-    return <div>Cargando detalles de la compañía...</div>;
+    return <div>Loading Companies...</div>;
   }
 
   if (error) {
@@ -78,11 +78,11 @@ const EditCompany: React.FC = () => {
 
   return (
     <div className="edit-company-container">
-      <h2>Editar Compañía</h2>
+      <h2>Edit Company</h2>
       {company && (
         <div>
           <div>
-            <label htmlFor="name">Nombre:</label>
+            <label htmlFor="name">Name</label>
             <input
               id="name"
               type="text"
@@ -93,10 +93,10 @@ const EditCompany: React.FC = () => {
           </div>
           <div className="buttons">
             <button className="btn btn-primary" onClick={handleSave}>
-              Guardar cambios
+              Save Changes
             </button>
             <button className="btn btn-secondary" onClick={handleCancel}>
-              Cancelar
+              Cancel
             </button>
           </div>
         </div>

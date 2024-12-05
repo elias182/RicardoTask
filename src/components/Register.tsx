@@ -114,7 +114,7 @@ const Register: React.FC = () => {
         {error && <div className="alert alert-danger">{error}</div>}
         <Form onSubmit={handleSubmit}>
           <Form.Group controlId="nombre" className="mb-3">
-            <Form.Label>Nombre</Form.Label>
+            <Form.Label>Name</Form.Label>
             <Form.Control
               type="text"
               placeholder="Ingrese su nombre"
@@ -125,7 +125,7 @@ const Register: React.FC = () => {
           </Form.Group>
 
           <Form.Group controlId="email" className="mb-3">
-            <Form.Label>Correo electrónico</Form.Label>
+            <Form.Label>Email</Form.Label>
             <Form.Control
               type="email"
               placeholder="Ingrese su correo electrónico"
@@ -136,7 +136,7 @@ const Register: React.FC = () => {
           </Form.Group>
 
           <Form.Group controlId="password" className="mb-3">
-            <Form.Label>Contraseña</Form.Label>
+            <Form.Label>Password</Form.Label>
             <Form.Control
               type="password"
               placeholder="Ingrese su contraseña"
@@ -147,7 +147,7 @@ const Register: React.FC = () => {
           </Form.Group>
 
           <Form.Group controlId="type_usuario" className="mb-3">
-            <Form.Label>Tipo de Usuario</Form.Label>
+            <Form.Label>Type of user</Form.Label>
             <Form.Control
               as="select"
               value={typeUsuario}
@@ -159,16 +159,16 @@ const Register: React.FC = () => {
               }}
               required
             >
-              <option value="">Seleccionar tipo de usuario</option>
-              <option value="user">Usuario</option>
-              <option value="empresario">Empresario</option>
+              <option value="">Select type of user</option>
+              <option value="user">User</option>
+              <option value="empresario">Emp</option>
             </Form.Control>
           </Form.Group>
 
           {/* Si el tipo de usuario es "empresario", mostramos un campo para el nombre de la compañía */}
           {typeUsuario === "empresario" ? (
             <Form.Group controlId="companyName" className="mb-3">
-              <Form.Label>Nombre de la Compañía</Form.Label>
+              <Form.Label>Name of the company</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Ingrese el nombre de su compañía"
@@ -180,14 +180,14 @@ const Register: React.FC = () => {
           ) : (
             // Si el tipo de usuario es "user", mostramos un dropdown de compañías
             <Form.Group controlId="compania" className="mb-3">
-              <Form.Label>Compañía</Form.Label>
+              <Form.Label>Company</Form.Label>
               <Form.Control
                 as="select"
                 value={selectedCompany}
                 onChange={(e) => setSelectedCompany(e.target.value)}
                 required
               >
-                <option value="">Seleccionar compañía</option>
+                <option value="">Select company</option>
                 {companies.map((company) => (
                   <option key={company.id} value={company.id}>
                     {company.nombre}
@@ -198,7 +198,7 @@ const Register: React.FC = () => {
           )}
 
           <Button variant="primary" type="submit" className="w-100">
-            Registrar
+            Register
           </Button>
         </Form>
       </div>

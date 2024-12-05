@@ -23,7 +23,7 @@ const Header = () => {
       <div className="container-fluid">
         {/* Enlace al inicio */}
         <Link to="/" className="navbar-brand">
-          Gestión de Compañías y Usuarios
+          Companies and Users
         </Link>
         <button
           className="navbar-toggler"
@@ -41,17 +41,17 @@ const Header = () => {
           <ul className="navbar-nav me-auto">
             <li className="nav-item">
               <Link to="/" className="nav-link">
-                Inicio
+                Home
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/companias" className="nav-link">
-                Compañías
+                Companies
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/usuarios" className="nav-link">
-                Usuarios
+                Users
               </Link>
             </li>
           </ul>
@@ -77,7 +77,7 @@ const Header = () => {
                     className="btn btn-outline-light"
                     onClick={handleLogout}
                   >
-                    Cerrar sesión
+                    Log out
                   </Button>
                 </li>
               </>
@@ -85,12 +85,12 @@ const Header = () => {
               <>
                 <li className="nav-item">
                   <Link to="/login" className="nav-link">
-                    Iniciar sesión
+                    Log in
                   </Link>
                 </li>
                 <li className="nav-item">
                   <Link to="/register" className="nav-link">
-                    Registrarse
+                    Register
                   </Link>
                 </li>
               </>

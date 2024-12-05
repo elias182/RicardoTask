@@ -89,15 +89,14 @@ const UserList: React.FC = () => {
 
   return (
     <div className="container mt-5">
-      <h2 className="text-center mb-4">Lista de Usuarios</h2>
+      <h2 className="text-center mb-4">List of users</h2>
       <div className="row">
         {users.length > 0 ? (
           users.map((user) => (
             <div key={user.id} className="col-md-6 col-lg-4 mb-4">
               <div className="user-item p-4 border rounded shadow-sm h-100">
                 <h5 className="mb-2 text-primary">{user.nombre}</h5>
-                <p className="mb-1"><strong>Correo:</strong> {user.correo}</p>
-                <p className="mb-3"><strong>Tipo:</strong> {user.type_usuario}</p>
+                <p className="mb-1">{user.correo}</p>
                 <div className="d-flex justify-content-between">
                   
                   {isAdmin && (
@@ -106,13 +105,13 @@ const UserList: React.FC = () => {
                         className="btn btn-warning btn-sm mr-2"
                         onClick={() => handleEditUser(user.id)}
                       >
-                        Editar
+                        Edit
                       </button>
                       <button
                         className="btn btn-danger btn-sm"
                         onClick={() => handleDeleteUser(user.id)}
                       >
-                        Eliminar
+                        delete
                       </button>
                     </div>
                   )}
@@ -122,7 +121,7 @@ const UserList: React.FC = () => {
           ))
         ) : (
           <div className="col-12">
-            <p className="text-center">No se encontraron usuarios.</p>
+            <p className="text-center">No users</p>
           </div>
         )}
       </div>

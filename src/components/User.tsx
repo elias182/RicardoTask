@@ -103,14 +103,14 @@ const User = () => {
   };
 
   if (!isAuthenticated) {
-    return <p>No estás autenticado</p>;
+    return <p>You arent authenticated</p>;
   }
 
   return (
     <div className="user-profile card p-3 mb-3">
       {error && <p className="error">{error}</p>}
       <h3 className="card-title">
-        Nombre:{" "}
+        name:{" "}
         {isEditing ? (
           <input
             type="text"
@@ -124,7 +124,7 @@ const User = () => {
       </h3>
 
       <p className="card-text">
-        Compañía:{" "}
+        Company:{" "}
         {isEditing ? (
           <select
             value={selectedCompaniaId}
@@ -139,23 +139,23 @@ const User = () => {
             ))}
           </select>
         ) : (
-          compania || "No tienes una compañía asignada."
+          compania || "No company asignated."
         )}
       </p>
 
       <div className="d-flex justify-content-between">
         {isEditing ? (
           <button className="btn btn-success" onClick={handleSave}>
-            Guardar
+            save
           </button>
         ) : (
           <button className="btn btn-primary" onClick={() => setIsEditing(true)}>
-            Editar
+            Edit
           </button>
         )}
 
         <button className="btn btn-danger" onClick={handleDeleteAccount}>
-          Eliminar cuenta
+          delete acount
         </button>
       </div>
     </div>

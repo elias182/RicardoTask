@@ -78,7 +78,7 @@ const CompanyInfo: React.FC = () => {
     return (
       <div className="d-flex justify-content-center align-items-center vh-100">
         <Spinner animation="border" variant="primary" />
-        <span className="ms-2">Cargando información de la compañía...</span>
+        <span className="ms-2">Loading Information...</span>
       </div>
     );
   }
@@ -92,15 +92,15 @@ const CompanyInfo: React.FC = () => {
       {company && (
         <Card className="shadow-lg">
           <Card.Header as="h3" className="text-center">
-            Información de la Compañía
+            Information of the company
           </Card.Header>
           <Card.Body>
             <Card.Title className="text-center">{company.nombre}</Card.Title>
             <Card.Text>
-              <strong>Propietario:</strong> {owner}
+              <strong>Owner:</strong> {owner}
             </Card.Text>
 
-            <h4>Usuarios Asociados</h4>
+            <h4>Users</h4>
             <ListGroup variant="flush">
               {users.length > 0 ? (
                 users.map((user) => (
